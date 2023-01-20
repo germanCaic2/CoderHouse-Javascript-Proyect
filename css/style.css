@@ -1,0 +1,168 @@
+:root {
+    --dark: #000;
+    --dark-x: rgb(24, 24, 24);
+    --light: #fff;
+    --green: #16eb0b;
+    --red: #830d00;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    min-height: 100%;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    letter-spacing: .05rem;
+    width: 100%;
+    min-height: 100vh;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* font size */
+.lead-xl {
+    font-size: 1.40rem;
+}
+
+.lead-xxl {
+    font-size: 1.70rem;
+}
+
+/* text */
+.text-dark {
+    color: var(--dark);
+}
+
+.text-light {
+    color: var(--light);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.text-red {
+    color: var(--red);
+}
+
+/* background */
+.bg-dark {
+    background-color: var(--dark) !important;
+}
+
+.bg-light {
+    background-color: var(--light) !important;
+}
+
+.bg-muted {
+    background-color: var(--dark-x);
+}
+
+.border-bottom {
+    border-bottom: 1px solid #272727 !important;
+}
+
+#logo {
+    width: 3rem;
+    padding-right: 0.5rem;
+}
+
+.card-img {
+    width: 300px;
+    height: 300px;
+    padding: 1rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.btn-primary {
+    background-color: var(--dark);
+    width: 100%;
+    border-color: var(--light);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-x);
+    border-color: var(--light);
+}
+
+.btn-success {
+    background-color: var(--green);
+    color: var(--dark);
+}
+
+.btn-noSale {
+    background-color: var(--red);
+    color: var(--light);
+}
+
+.btn-danger {
+    margin: 1rem;
+}
+
+.scale:hover {
+    transform: scale(1.08);
+}
+
+.shadowx {
+    -webkit-box-shadow: 0px 0px 36px -6px rgba(0, 0, 0, 1);
+    -moz-box-shadow: 0px 0px 36px -6px rgba(0, 0, 0, 1);
+    box-shadow: 0px 0px 36px -6px rgba(0, 0, 0, 1);
+}
+
+.item {
+    position: relative;
+}
+
+.item:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all .3s;
+}
+
+.item:hover:before {
+    width: 100%;
+}
+
+.animation:before {
+    left: 50%;
+}
+
+.animation:hover:before {
+    left: 0;
+}
+
+.border-input {
+    border-color: var(--green) !important;
+    background-color: var(--light) !important;
+}
+
+.w-10 {
+    width: 10%;
+}
